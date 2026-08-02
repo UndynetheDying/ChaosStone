@@ -1,0 +1,130 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	TheChaosBlade: {
+		DisplayName: The Chaos Blade
+		Tooltip: It's Chaos... but a blade
+	}
+
+	BananaGun: {
+		DisplayName: Banana Gun
+		Tooltip: It's funny because it's a banana that looks like a gun
+	}
+
+	StoplightBlade: {
+		DisplayName: Stoplight Blade
+		Tooltip: It came all the way from MagiCraft
+	}
+
+	SwordText: {
+		DisplayName: Sword Text
+		Tooltip: It just says Sword, what's so special about that?
+	}
+
+	TheIllumina: {
+		DisplayName: The Illumina
+		Tooltip: Stupid reference to a stupid game
+	}
+
+	KingsStaff: {
+		DisplayName: Kings Staff
+		Tooltip: LIKE A BOSS!!! (king, that is)
+	}
+
+	EvilDirtRod: {
+		DisplayName: Evil Dirt Rod
+		Tooltip: EVIL dirt rod be like: I am an actually (most likely not) good weapon.
+	}
+
+	BeetleStaff: {
+		DisplayName: Beetle Staff
+		Tooltip: Can the person who makes this mod actually code summon weapons? (Answer: If you’re seeing this in game, then yes)
+	}
+
+	MusicNote: {
+		DisplayName: Music Note
+		Tooltip: (Musical Sounds)
+	}
+
+	SpotiHarmonica: {
+		DisplayName: Spoti Harmonica
+		Tooltip: I spent all of my money on random notes 2?! -The king of Devious Doorknob 4.0 or 4.5, I don’t get paid for remembering stuff. "Ah yes. 'Harmonica'."
+	}
+
+	TheRock: {
+		DisplayName: The Rock
+		Tooltip: Really, a rock? No, it’s THE rock. You’ve ran out of ideas if you use a (the) rock as a weapon... and why is it coded like an airplane?
+	}
+
+	PreHardmodeArc: {
+		Tooltip: It's an arc-shaped object! IN PRE-HARDMODE!!!
+		DisplayName: Pre-Hardmode Arc
+	}
+
+	Trash: {
+		Tooltip: I literally looked up trash and resized it in gimp... Enjoy!
+		DisplayName: Trash
+	}
+
+	TheParticle: {
+		Tooltip: Bro, what is this? Probably a reference to some cockroach.
+		DisplayName: The Particle
+	}
+
+	TheChaosStone: {
+		DisplayName: The Chaos Stone
+		Tooltip: It’s THE chaos stone, but what’s so chaosy about this stone?
+	}
+
+	TheHat: {
+		Tooltip: It killed the bear, and also destroyed a ton of planets!
+		DisplayName: The Hat
+	}
+
+	Bang: {
+		DisplayName: Bang
+		Tooltip: They never added the Big Bang, but added supermarkt?! 0/10 worst game ever
+	}
+
+	TimeStop: {
+		DisplayName: Time Stop
+		Tooltip: Stops time for a ridiculous amount of time then crashes your game! - Developer Item
+	}
+
+	HandS: {
+		DisplayName: Hand Sanitizer Bottle
+		Tooltip: You look stupid with a hand sanitizer bottle on your head.
+	}
+
+	WigglerStaff: {
+		DisplayName: Wiggler Staff
+		Tooltip: ""
+	}
+}
+
+Projectiles: {
+	KingsOrb.DisplayName: Kings Orb
+	SwordProj.DisplayName: Sword Text Projectile
+	IlluminaProjectile.DisplayName: Illumina Projectile
+	EvilDirt.DisplayName: Evil Dirt
+	BeetleMinion.DisplayName: Beetle Minion
+	TheRockProjectile.DisplayName: The Rock Projectile
+	TrashShot.DisplayName: Trash Shot
+	TrashCan.DisplayName: Trash Can
+	Chaos.DisplayName: Chaos
+	MahLazerBeam.DisplayName: Mah Lazer Beam
+	MAHLAZER.DisplayName: MAH LAZER
+	WigglerHeadProjectile.DisplayName: Wiggler Head Projectile
+}
+
+Buffs: {
+	BeetleMinionBuff: {
+		DisplayName: Beetle Minion Buff
+		Description: You have the power of beetle on your side
+	}
+
+	WigglerBuff: {
+		DisplayName: Wiggler Buff
+		Description: Mods.ChaosStone.Buffs.WigglerBuff.Description
+	}
+}
