@@ -108,7 +108,12 @@ Items: {
 
 	BillSword: {
 		DisplayName: Bill Sword
-		Tooltip: "What does this have to do with Bill in any way?"
+		Tooltip: What does this have to do with Bill in any way?
+	}
+
+	SunGun: {
+		DisplayName: Sun Gun
+		Tooltip: It has the color palette of the Sun.
 	}
 }
 
