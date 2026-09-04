@@ -105,6 +105,11 @@ Items: {
 		DisplayName: Multiverse Machine
 		Tooltip: Make Bill the president of America
 	}
+
+	BillSword: {
+		DisplayName: Bill Sword
+		Tooltip: "What does this have to do with Bill in any way?"
+	}
 }
 
 Projectiles: {
