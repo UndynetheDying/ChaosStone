@@ -79,6 +79,7 @@ namespace ChaosStone.Content.Items.Weapons
 				.AddIngredient(ItemID.Obsidian, 10)
 				.AddIngredient(ItemID.Ruby, 5)
 				.AddIngredient(ItemID.DemoniteBar, 20)
+				.AddIngredient(ItemID.ChippysCouch, 1)
 				.AddTile(TileID.DemonAltar) // This includes both the Mythril and Orichalcum Anvils.
 				.Register();
 			CreateRecipe()
@@ -87,6 +88,7 @@ namespace ChaosStone.Content.Items.Weapons
 				.AddIngredient(ItemID.Obsidian, 10)
 				.AddIngredient(ItemID.Ruby, 5)
 				.AddIngredient(ItemID.CrimtaneBar, 20)
+				.AddIngredient(ItemID.ChippysCouch, 1)
 				.AddTile(TileID.DemonAltar) // This includes both the Mythril and Orichalcum Anvils.
 				.Register();
 		}

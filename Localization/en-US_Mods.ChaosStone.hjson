@@ -120,6 +120,11 @@ Items: {
 		Tooltip: At this point, just assume that every item name is a reference.
 		DisplayName: Thievery Tome
 	}
+
+	OrderBlade: {
+		DisplayName: The Order Blade
+		Tooltip: Perfectly balanced, as all things should be.
+	}
 }
 
 Projectiles: {
