@@ -12,7 +12,7 @@ namespace ChaosStone.Content.Items.Weapons
 		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.ChaosStone.hjson' file.
 		public override void SetDefaults()
 		{
-			Item.damage = 30;
+			Item.damage = 15;
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 40;
 			Item.height = 40;

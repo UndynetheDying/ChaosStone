@@ -1,7 +1,7 @@
 # This file will automatically update with entries for new content after a build and reload.
 
 Items: {
-	TheChaosBlade: {
+	ChaosBlade: {
 		DisplayName: The Chaos Blade
 		Tooltip: It's Chaos... but a blade
 	}
@@ -125,6 +125,21 @@ Items: {
 		DisplayName: The Order Blade
 		Tooltip: Perfectly balanced, as all things should be.
 	}
+
+	OrderCannon: {
+		DisplayName: The Order Cannon
+		Tooltip: And you call it a cannon despite the fact that it's obviously a minigun?
+	}
+
+	OrderBombs: {
+		Tooltip: Originally, this item destroyed tiles. I think you can see where that went.
+		DisplayName: The Order Bombs
+	}
+
+	OrderWhip: {
+		Tooltip: ""
+		DisplayName: Order Whip
+	}
 }
 
 Projectiles: {
@@ -141,6 +156,8 @@ Projectiles: {
 	MAHLAZER.DisplayName: MAH LAZER
 	WigglerHeadProjectile.DisplayName: Wiggler Head Projectile
 	MoonMinion.DisplayName: Moon Minion
+	OrderBombsProjectile.DisplayName: Order Bomb Projectiles
+	OrderWhipProjectile.DisplayName: Order Whip Projectile
 }
 
 Buffs: {
@@ -152,5 +169,15 @@ Buffs: {
 	MoonMinionBuff: {
 		Description: I hope nothing good happens (press space now)
 		DisplayName: Moon Minion Buff
+	}
+
+	OrderWhipDebuff: {
+		Description: Mods.ChaosStone.Buffs.OrderWhipDebuff.Description
+		DisplayName: Order Whip Debuff
+	}
+
+	OrderWhipAdvancedDebuff: {
+		Description: Mods.ChaosStone.Buffs.OrderWhipAdvancedDebuff.Description
+		DisplayName: Order Whip Advanced Debuff
 	}
 }
