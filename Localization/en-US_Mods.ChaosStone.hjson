@@ -96,11 +96,6 @@ Items: {
 		Tooltip: You look stupid with a hand sanitizer bottle on your head.
 	}
 
-	WigglerStaff: {
-		DisplayName: Wiggler Staff
-		Tooltip: ""
-	}
-
 	MultiverseMachine: {
 		DisplayName: Multiverse Machine
 		Tooltip: Make Bill the president of America
@@ -114,6 +109,11 @@ Items: {
 	SunGun: {
 		DisplayName: Sun Gun
 		Tooltip: It has the color palette of the Sun.
+	}
+
+	MoonStaff: {
+		Tooltip: Get struck by the moon
+		DisplayName: Moon Staff
 	}
 }
 
@@ -130,6 +130,7 @@ Projectiles: {
 	MahLazerBeam.DisplayName: Mah Lazer Beam
 	MAHLAZER.DisplayName: MAH LAZER
 	WigglerHeadProjectile.DisplayName: Wiggler Head Projectile
+	MoonMinion.DisplayName: Moon Minion
 }
 
 Buffs: {
@@ -138,8 +139,8 @@ Buffs: {
 		Description: You have the power of beetle on your side
 	}
 
-	WigglerBuff: {
-		DisplayName: Wiggler Buff
-		Description: Mods.ChaosStone.Buffs.WigglerBuff.Description
+	MoonMinionBuff: {
+		Description: I hope nothing good happens (press space now)
+		DisplayName: Moon Minion Buff
 	}
 }
