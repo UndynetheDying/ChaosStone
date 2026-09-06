@@ -115,6 +115,11 @@ Items: {
 		Tooltip: Get struck by the moon
 		DisplayName: Moon Staff
 	}
+
+	ThieveryTome: {
+		Tooltip: At this point, just assume that every item name is a reference.
+		DisplayName: Thievery Tome
+	}
 }
 
 Projectiles: {
