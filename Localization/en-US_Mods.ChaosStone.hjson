@@ -140,6 +140,16 @@ Items: {
 		Tooltip: It's the order whip, but I don't see what's so order about the whip.
 		DisplayName: The Order Whip
 	}
+
+	ObsidianBuster: {
+		DisplayName: Obsidian Buster
+		Tooltip: This is booming business (this makes no cents)
+	}
+
+	LavaSpewer: {
+		DisplayName: Lava Spewer
+		Tooltip: Get lavaed on
+	}
 }
 
 Projectiles: {
@@ -158,6 +168,7 @@ Projectiles: {
 	MoonMinion.DisplayName: Moon Minion
 	OrderBombsProjectile.DisplayName: Order Bomb Projectiles
 	OrderWhipProjectile.DisplayName: Order Whip Projectile
+	LavaSpewerProjectile.DisplayName: Lava Spewer Projectile
 }
 
 Buffs: {
