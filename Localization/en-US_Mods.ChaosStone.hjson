@@ -137,8 +137,8 @@ Items: {
 	}
 
 	OrderWhip: {
-		Tooltip: ""
-		DisplayName: Order Whip
+		Tooltip: It's the order whip, but I don't see what's so order about the whip.
+		DisplayName: The Order Whip
 	}
 }
 
