@@ -15,9 +15,8 @@ namespace ChaosStone.Content.Items.Weapons
 			Item.width = 40;
 			Item.height = 40;
 			Item.UseSound = SoundID.Item71;
-            Item.shoot = ModContent.ProjectileType<Projectiles.Chaos>();
+            Item.shoot = ModContent.ProjectileType<Projectiles.LavaSpewerProjectile>();
             Item.shootSpeed = 5;
-            Item.useAmmo = AmmoID.None;
 			Item.SetShopValues(ItemRarityColor.LightRed4, 10000);
             Item.mana = 15;
 		}

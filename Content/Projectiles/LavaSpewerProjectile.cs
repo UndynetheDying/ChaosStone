@@ -12,7 +12,8 @@ namespace ChaosStone.Content.Projectiles
 
 			// Copy the ai of any given projectile using AIType, since we want
 			// the projectile to essentially behave the same way as the vanilla projectile.
-			AIType = ProjectileID.GoldenShowerFriendly;
+			Projectile.aiStyle = ProjAIStyleID.GoldenShowerFriendly;
+			aiType = ProjectileID.GoldenShowerFrie;
 
 			Projectile.friendly = true; // Can the projectile deal damage to enemies?
 			Projectile.DamageType = DamageClass.Magic; // Is the projectile shoot by a ranged weapon?
