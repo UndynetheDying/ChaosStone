@@ -1,0 +1,2 @@
+Push: git push https://github.com/UndynetheDying/ChaosStone
+Pull: git pull https://github.com/UndynetheDying/ChaosStone
