@@ -1,0 +1,38 @@
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace ChaosStone.Content.Items.Weapons
+{ 
+	// This is a basic item template.
+	// Please see tModLoader's ExampleMod for every other example:
+	// https://github.com/tModLoader/tModLoader/tree/stable/ExampleMod
+	public class Obsitana : ModItem
+	{
+		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.ChaosStone.hjson' file.
+		public override void SetDefaults()
+		{
+			Item.damage = 33;
+			Item.DamageType = DamageClass.Melee;
+			Item.width = 100;
+			Item.height = 100;
+			Item.useTime = 3;
+			Item.useAnimation = 20;
+			Item.useStyle = ItemUseStyleID.Swing;
+			Item.knockBack = 6;
+			Item.value = Item.buyPrice(silver: 10);
+			Item.rare = ItemRarityID.Blue;
+			Item.UseSound = SoundID.Item1;
+			Item.autoReuse = true;
+		}
+
+		public override void AddRecipes()
+		{
+			Recipe recipe = CreateRecipe();
+			recipe.AddIngredient(ItemID.HellstoneBar, 5);
+            recipe.AddIngredient(ItemID.Obsidian, 50);
+			recipe.AddTile(TileID.Hellforge);
+			recipe.Register();
+		}
+	}
+}

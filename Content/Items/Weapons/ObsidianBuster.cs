@@ -33,9 +33,9 @@ namespace ChaosStone.Content.Items.Weapons
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient(ItemID.Banana, 1)
-                .AddIngredient(ItemID.ExplosivePowder, 10)
-				.AddTile(TileID.WorkBenches)
+				.AddIngredient(ItemID.HellstoneBar, 10)
+                .AddIngredient(ItemID.Obsidian, 30)
+				.AddTile(TileID.Hellforge)
 				.Register();
 		}
 	}

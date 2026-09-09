@@ -1,39 +1,38 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
 
 namespace ChaosStone.Content.Projectiles
 {
-	public class LavaSpewerProjectile : ModProjectile
-	{
-		public override void SetDefaults() {
-			Projectile.width = 5; // The width of projectile hitbox
-			Projectile.height = 5; // The height of projectile hitbox
+    public class LavaSpewerProjectile : ModProjectile
+    {
+        public override void SetDefaults() {
+            Projectile.width = 6;
+            Projectile.height = 6;
+            Projectile.friendly = true;
+            Projectile.DamageType = DamageClass.Magic;
+            Projectile.penetrate = 8;     // Pierces up to 8 enemies like Golden Shower
+            Projectile.alpha = 255;       // Hide base texture if using purely dust/particles
+            Projectile.tileCollide = true;
+            Projectile.ignoreWater = false;
+            Projectile.aiStyle = 0;       // Custom movement for gravity/arch
+        }
 
-			// Copy the ai of any given projectile using AIType, since we want
-			// the projectile to essentially behave the same way as the vanilla projectile.
-			Projectile.aiStyle = ProjAIStyleID.GoldenShowerFriendly;
-			aiType = ProjectileID.GoldenShowerFrie;
+        public override void AI() {
+            // Apply gravity simulation (stream arches downward)
+            Projectile.velocity.Y += 0.25f; 
 
-			Projectile.friendly = true; // Can the projectile deal damage to enemies?
-			Projectile.DamageType = DamageClass.Magic; // Is the projectile shoot by a ranged weapon?
-			Projectile.ignoreWater = true; // Does the projectile's speed be influenced by water?
-			Projectile.tileCollide = false; // Can the projectile collide with tiles?
-			Projectile.timeLeft = 60; // Each update timeLeft is decreased by 1. Once timeLeft hits 0, the Projectile will naturally despawn. (60 ticks = 1 second)
+            // Create trailing golden/yellow dust
+            if (Main.rand.NextBool(2)) {
+                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.GoldFlame, Projectile.velocity.X * 0.2f, Projectile.velocity.Y * 0.2f, 100, default, 1.2f);
+                Main.dust[dust].noGravity = true;
+            }
+        }
 
-			Projectile.penetrate = -1;
-			// 1: Projectile.penetrate = 1; // Will hit even if npc is currently immune to player
-			// 2a: Projectile.penetrate = -1; // Will hit and unless 3 is use, set 10 ticks of immunity
-			// 2b: Projectile.penetrate = 3; // Same, but max 3 hits before dying
-			// 5: Projectile.usesLocalNPCImmunity = true;
-			// 5a: Projectile.localNPCHitCooldown = -1; // 1 hit per npc max
-			// 5b: Projectile.localNPCHitCooldown = 20; // 20 ticks before the same npc can be hit again
-		}
-
-		// See comments at the beginning of the class
-		public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone) {
-			// 3a: target.immune[Projectile.owner] = 20;
-			// 3b: target.immune[Projectile.owner] = 5;
-		}
-	}
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone) {
+            // Apply a custom debuff or vanilla Ichor debuff (BuffID.Ichor) for defense reduction
+            target.AddBuff(BuffID.OnFire, 300); // 5 seconds of Ichor
+        }
+    }
 }

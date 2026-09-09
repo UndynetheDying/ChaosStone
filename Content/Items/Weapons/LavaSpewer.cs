@@ -1,4 +1,3 @@
-using System.Reflection;
 using Terraria;
 using Terraria.Enums;
 using Terraria.ID;
@@ -9,23 +8,28 @@ namespace ChaosStone.Content.Items.Weapons
 	public class LavaSpewer : ModItem
 	{
 		public override void SetDefaults() {
-            Item.damage = 10;
-            Item.DamageType = DamageClass.Magic;
-            Item.knockBack = 1f;
-			Item.width = 40;
+			// DefaultToStaff handles setting various Item values that magic staff weapons use.
+			// Hover over DefaultToStaff in Visual Studio to read the documentation!
+			// Shoot a black bolt, also known as the projectile shot from the onyx blaster.
+			Item.DefaultToStaff(ModContent.ProjectileType<Projectiles.LavaSpewerProjectile>(), 10, 20, 8);
+			Item.width = 34;
 			Item.height = 40;
 			Item.UseSound = SoundID.Item71;
-            Item.shoot = ModContent.ProjectileType<Projectiles.LavaSpewerProjectile>();
-            Item.shootSpeed = 5;
+
+			// A special method that sets the damage, knockback, and bonus critical strike chance.
+			// This weapon has a crit of 32% which is added to the players default crit chance of 4%
+			Item.SetWeaponValues(10, 1, 5);
+
 			Item.SetShopValues(ItemRarityColor.LightRed4, 10000);
-            Item.mana = 15;
 		}
 
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe()
-                .AddIngredient(ItemID.IronBar, 5)
-				.AddTile(TileID.Anvils)
+                .AddIngredient(ItemID.Book, 5)
+				.AddIngredient(ItemID.HellstoneBar, 12)
+				.AddIngredient(ItemID.Obsidian, 25)
+				.AddTile(TileID.Bookcases)
 				.Register();
 		}
 

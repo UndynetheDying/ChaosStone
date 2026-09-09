@@ -150,6 +150,11 @@ Items: {
 		DisplayName: Lava Spewer
 		Tooltip: Get lavaed on
 	}
+
+	Obsitana: {
+		DisplayName: Obsitana
+		Tooltip: Long--- long--- swoooooord (Revoke my naming license)
+	}
 }
 
 Projectiles: {
