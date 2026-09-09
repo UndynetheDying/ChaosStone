@@ -115,7 +115,7 @@ namespace ChaosStone.Content.Projectiles.Minions
 						Vector2 shootVelocity = shootDirection * FireVelocity;
 
 						// The type of projectile the sentry will shoot. It is important that sentry shots are included in ProjectileID.Sets.SentryShot, so reusing unrelated vanilla projectiles as-is won't work 100%.
-						int type = ModContent.ProjectileType<TrashShot>();
+						int type = ModContent.ProjectileType<Projectiles.LavaSpewerProjectile>();
 
 						Projectile.NewProjectile(Projectile.GetSource_FromThis(), new Vector2(Projectile.Center.X - 4f, Projectile.Center.Y), shootVelocity, type, Projectile.damage, 3, Projectile.owner);
 						// Note that Projectile.damage will take into account current equipment damage bonuses automatically for sentries and minions, so there is no need to calculate that here to take advantage of current equipment bonuses.

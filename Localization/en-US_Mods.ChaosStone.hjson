@@ -155,6 +155,11 @@ Items: {
 		DisplayName: Obsitana
 		Tooltip: Long--- long--- swoooooord (Revoke my naming license)
 	}
+
+	Obsidianshooter: {
+		DisplayName: Obsidianshooter
+		Tooltip: If the lava peashooter and the water peashooter loved eachother very much...
+	}
 }
 
 Projectiles: {
@@ -169,11 +174,11 @@ Projectiles: {
 	Chaos.DisplayName: Chaos
 	MahLazerBeam.DisplayName: Mah Lazer Beam
 	MAHLAZER.DisplayName: MAH LAZER
-	WigglerHeadProjectile.DisplayName: Wiggler Head Projectile
 	MoonMinion.DisplayName: Moon Minion
 	OrderBombsProjectile.DisplayName: Order Bomb Projectiles
 	OrderWhipProjectile.DisplayName: Order Whip Projectile
 	LavaSpewerProjectile.DisplayName: Lava Spewer Projectile
+	ObsidianshooterSentry.DisplayName: Obsidianshooter Sentry
 }
 
 Buffs: {
