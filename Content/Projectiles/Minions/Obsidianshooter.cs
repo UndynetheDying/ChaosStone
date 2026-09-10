@@ -16,7 +16,7 @@ namespace ChaosStone.Content.Projectiles.Minions
 		}
 
 		public override void SetDefaults() {
-			Item.damage = 25;
+			Item.damage = 40;
 			Item.DamageType = DamageClass.Summon;
 			Item.sentry = true;
 			Item.mana = 5;

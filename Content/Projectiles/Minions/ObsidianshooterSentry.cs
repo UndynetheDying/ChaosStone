@@ -48,9 +48,9 @@ namespace ChaosStone.Content.Projectiles.Minions
 
 		// This AI will function as a static sentry, and will not move. If you would like to know how to do more advanced minion AI, check out ExampleSimpleMinion.cs.
 		public override void AI() {
-			const int ShootFrequency = 60; // How long the sentry waits between shots.
+			const int ShootFrequency = 10; // How long the sentry waits between shots.
 			const int TargetingRange = 50 * 16; // The sentry's targeting range, 50 tiles.
-			const float FireVelocity = 10f; // The velocity the sentry's shot projectile will travel.
+			const float FireVelocity = 30f; // The velocity the sentry's shot projectile will travel.
 			Projectile.velocity.Y += 0.2f;
 
 			// Code to run when spawned

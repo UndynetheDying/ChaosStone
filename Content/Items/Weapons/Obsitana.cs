@@ -12,12 +12,12 @@ namespace ChaosStone.Content.Items.Weapons
 		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.ChaosStone.hjson' file.
 		public override void SetDefaults()
 		{
-			Item.damage = 33;
+			Item.damage = 15;
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 100;
 			Item.height = 100;
-			Item.useTime = 8;
-			Item.useAnimation = 20;
+			Item.useTime = 10;
+			Item.useAnimation = 10;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
 			Item.value = Item.buyPrice(silver: 10);
@@ -25,7 +25,7 @@ namespace ChaosStone.Content.Items.Weapons
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
 			Item.shoot = ProjectileID.DD2PhoenixBowShot;
-			Item.shootSpeed = 10
+			Item.shootSpeed = 10;
 		}
 
 		public override void AddRecipes()

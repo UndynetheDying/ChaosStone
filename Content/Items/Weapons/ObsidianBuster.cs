@@ -14,7 +14,7 @@ namespace ChaosStone.Content.Items.Weapons
 			Item.height = 50; // The height of item hitbox
 
 			Item.autoReuse = true;  // Whether or not you can hold click to automatically use it again.
-			Item.damage = 50; // Sets the item's damage. Note that projectiles shot by this weapon will use its and the used ammunition's damage added together.
+			Item.damage = 150; // Sets the item's damage. Note that projectiles shot by this weapon will use its and the used ammunition's damage added together.
 			Item.DamageType = DamageClass.Ranged; // What type of damage does this item affect?
 			Item.knockBack = 4f; // Sets the item's knockback. Note that projectiles shot by this weapon will use its and the used ammunition's knockback added together.
 			Item.noMelee = true; // So the item's animation doesn't do damage.
