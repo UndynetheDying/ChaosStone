@@ -16,7 +16,7 @@ namespace ChaosStone.Content.Items.Weapons
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 100;
 			Item.height = 100;
-			Item.useTime = 3;
+			Item.useTime = 8;
 			Item.useAnimation = 20;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
@@ -24,6 +24,8 @@ namespace ChaosStone.Content.Items.Weapons
 			Item.rare = ItemRarityID.Blue;
 			Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
+			Item.shoot = ProjectileID.DD2PhoenixBowShot;
+			Item.shootSpeed = 10
 		}
 
 		public override void AddRecipes()
