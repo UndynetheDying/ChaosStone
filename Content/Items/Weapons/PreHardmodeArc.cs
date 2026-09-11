@@ -26,12 +26,11 @@ namespace ChaosStone.Content.Items.Weapons
 			Item.autoReuse = true;
 		}
 
-		public override void AddRecipes()
-		{
-			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.IronBar, 2);
-			recipe.AddTile(TileID.WorkBenches);
-			recipe.Register();
+		public override void AddRecipes() {
+			CreateRecipe()
+				.AddIngredient(ItemID.IronBar, 2)
+				.AddTile(TileID.Anvils)
+				.Register();
 		}
 	}
 }

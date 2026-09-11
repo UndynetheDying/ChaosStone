@@ -28,13 +28,12 @@ namespace ChaosStone.Content.Items.Weapons
 			Item.shootSpeed = 10;
 		}
 
-		public override void AddRecipes()
-		{
-			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.HellstoneBar, 5);
-            recipe.AddIngredient(ItemID.Obsidian, 50);
-			recipe.AddTile(TileID.Hellforge);
-			recipe.Register();
+		public override void AddRecipes() {
+			CreateRecipe()
+				.AddIngredient(ItemID.HellstoneBar, 5)
+				.AddIngredient(ItemID.Obsidian, 50)
+				.AddTile(TileID.Anvils)
+				.Register();
 		}
 	}
 }
