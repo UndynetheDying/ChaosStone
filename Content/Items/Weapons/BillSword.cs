@@ -18,7 +18,7 @@ namespace ChaosStone.Content.Items.Weapons
 			Item.height = 32;
 			Item.useTime = 20;
 			Item.useAnimation = 20;
-			Item.useStyle = ItemUseStyleID.Swing;
+			Item.useStyle = ItemUseStyleID.Rapier;
 			Item.knockBack = 6.5f;
 			Item.value = Item.buyPrice(silver: 10);
 			Item.rare = ItemRarityID.Blue;
@@ -26,13 +26,12 @@ namespace ChaosStone.Content.Items.Weapons
 			Item.autoReuse = true;
 		}
 
-		public override void AddRecipes()
-		{
-			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.IronBar, 10);
-			recipe.AddIngredient(ItemID.CopperShortsword, 1);
-			recipe.AddTile(TileID.Anvils);
-			recipe.Register();
+		public override void AddRecipes() {
+			CreateRecipe()
+				.AddIngredient(ItemID.IronBar, 10)
+				.AddIngredient(ItemID.CopperShortsword, 1)
+				.AddTile(TileID.Anvils)
+				.Register();
 		}
 	}
 }
