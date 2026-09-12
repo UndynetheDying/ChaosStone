@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChaosStone")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d12dd95da8c290d8439250265003e1c692b7dcc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f89755518a23b0db97be79c9d1a75262cb87aa20")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChaosStone")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChaosStone")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

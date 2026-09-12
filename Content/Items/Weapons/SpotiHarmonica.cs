@@ -33,7 +33,7 @@ namespace ChaosStone.Content.Items.Weapons
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient(MKodContent.ItemType<MusicNote>(), 35)
+				.AddIngredient(ModContent.ItemType<MusicNote>(), 35)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}
