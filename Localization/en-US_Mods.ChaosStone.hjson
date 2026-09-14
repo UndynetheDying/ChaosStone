@@ -160,6 +160,11 @@ Items: {
 		DisplayName: Obsidianshooter
 		Tooltip: If the lava peashooter and the water peashooter loved eachother very much...
 	}
+
+	UpliftBlade: {
+		DisplayName: Uplift Blade
+		Tooltip: This blade lifts you up
+	}
 }
 
 Projectiles: {
