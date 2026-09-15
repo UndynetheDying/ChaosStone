@@ -34,43 +34,50 @@ namespace ChaosStone.Content.Items.Weapons
 				.AddTile(TileID.MythrilAnvil)
 				.Register();
 		}
-		public override bool AltFunctionUse(Player player) {
-            return true;
-        }
+		
+        int buffType = ModContent.BuffType<UpliftDebuff>(); // Or ModContent.BuffType<YourCustomDebuff>()
 
-        // 2. Adjust stats when right-clicking (Optional)
-        public override bool CanUseItem(Player player) {
-            if (player.altFunctionUse == 2)
-            {
-                // Settings specific to the right-click function
-                Item.useTime = 70;
-                Item.useAnimation = 70;
+        if (!player.HasBuff(buffType) && Main.debuff[buffType])
+        {
+            public override bool AltFunctionUse(Player player) {
+                return true;
             }
-            else
-            {
-                // Reset to default settings for left-click
-                Item.useTime = 20;
-                Item.useAnimation = 20;
-            }
-            return true;
-        }
 
-        // 3. Apply the sharp upward velocity
-        public override bool? UseItem(Player player) {
-            // Check if this specific use action is the right-click
-            if (player.altFunctionUse == 2)
-            {
-                // A negative Y value moves the player UPWARD.
-                // -15f is a sharp jump. Adjust this value to change the intensity.
-                player.velocity.Y = -15f; 
-
-                // Optional: Sync the movement in multiplayer worlds
-                if (Main.netMode == NetmodeID.MultiplayerClient)
+            // 2. Adjust stats when right-clicking (Optional)
+            public override bool CanUseItem(Player player) {
+                if (player.altFunctionUse == 2)
                 {
-                    NetMessage.SendData(MessageID.PlayerControls, number: player.whoAmI);
+                    // Settings specific to the right-click function
+                    Item.useTime = 70;
+                    Item.useAnimation = 70;
                 }
+                else
+                {
+                    // Reset to default settings for left-click
+                    Item.useTime = 20;
+                    Item.useAnimation = 20;
+                }
+                return true;
             }
-            return true;
+
+            // 3. Apply the sharp upward velocity
+            public override bool? UseItem(Player player) {
+                // Check if this specific use action is the right-click
+                if (player.altFunctionUse == 2)
+                {
+                    // A negative Y value moves the player UPWARD.
+                    // -15f is a sharp jump. Adjust this value to change the intensity.
+                    player.velocity.Y = -15f; 
+                    player.AddBuff(ModContent.BuffType<UpliftDebuff>(), 180); // 3 seconds
+
+                    // Optional: Sync the movement in multiplayer worlds
+                    if (Main.netMode == NetmodeID.MultiplayerClient)
+                    {
+                        NetMessage.SendData(MessageID.PlayerControls, number: player.whoAmI);
+                    }
+                }
+                return true;
+            }
         }
 	}
 }
