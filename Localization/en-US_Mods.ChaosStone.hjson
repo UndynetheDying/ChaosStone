@@ -175,6 +175,11 @@ Items: {
 		DisplayName: Uplift Tome
 		Tooltip: Reminds me of that one Dungeons weapon
 	}
+
+	UpliftWhip: {
+		DisplayName: Uplift Whip
+		Tooltip: Whip this up you lift
+	}
 }
 
 Projectiles: {
@@ -194,6 +199,7 @@ Projectiles: {
 	OrderWhipProjectile.DisplayName: Order Whip Projectile
 	LavaSpewerProjectile.DisplayName: Lava Spewer Projectile
 	ObsidianshooterSentry.DisplayName: Obsidianshooter Sentry
+	UpliftWhipProjectile.DisplayName: Uplift Whip Projectile
 }
 
 Buffs: {
@@ -220,5 +226,15 @@ Buffs: {
 	UpliftDebuff: {
 		Description: Your Uplift abilities are on cooldown
 		DisplayName: Uplift Debuff
+	}
+
+	UpliftWhipAdvancedDebuff: {
+		DisplayName: Uplift Whip Advanced Debuff
+		Description: What do YOU think?
+	}
+
+	UpliftWhipDebuff: {
+		DisplayName: Uplift Whip Debuff
+		Description: Uplifting Debuffs here
 	}
 }
