@@ -170,6 +170,11 @@ Items: {
 		Tooltip: This thrower lifts you up
 		DisplayName: Uplift Thrower
 	}
+
+	UpliftTome: {
+		DisplayName: Uplift Tome
+		Tooltip: Reminds me of that one Dungeons weapon
+	}
 }
 
 Projectiles: {
