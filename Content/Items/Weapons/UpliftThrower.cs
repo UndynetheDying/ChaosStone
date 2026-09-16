@@ -59,5 +59,18 @@ namespace ChaosStone.Content.Items.Weapons
             }
             return true;
         }
+		private int lastAmmoConsumeTime = 0;
+		public override bool CanConsumeAmmo(Item ammo, Player player) {
+    		// Main.GameUpdateCount is a timer that goes up by 1 sixty times every second
+    		// 90 ticks = 1.5 seconds
+    		if (Main.GameUpdateCount - lastAmmoConsumeTime >= 60) {
+        		// Save the current time because we are using ammo now
+        		lastAmmoConsumeTime = (int)Main.GameUpdateCount;
+        		return true; 
+    		}
+
+    	// If 1.5 seconds haven't passed, shoot for free!
+    	return false; 
+		}
 	}
 }
