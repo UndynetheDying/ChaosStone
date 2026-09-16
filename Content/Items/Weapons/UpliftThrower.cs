@@ -63,7 +63,7 @@ namespace ChaosStone.Content.Items.Weapons
 		public override bool CanConsumeAmmo(Item ammo, Player player) {
     		// Main.GameUpdateCount is a timer that goes up by 1 sixty times every second
     		// 90 ticks = 1.5 seconds
-    		if (Main.GameUpdateCount - lastAmmoConsumeTime >= 60) {
+    		if (Main.GameUpdateCount - lastAmmoConsumeTime >= 20) {
         		// Save the current time because we are using ammo now
         		lastAmmoConsumeTime = (int)Main.GameUpdateCount;
         		return true; 
