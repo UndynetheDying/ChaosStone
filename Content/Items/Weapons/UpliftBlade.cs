@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ChaosStone.Content.Buffs;
 
 namespace ChaosStone.Content.Items.Weapons
 { 
@@ -44,16 +45,17 @@ namespace ChaosStone.Content.Items.Weapons
                 // Check if this specific use action is the right-click
             if (player.altFunctionUse == 2)
             {
-				if (player.HasBuff())	
+				if (!player.HasBuff(ModContent.BuffType<UpliftDebuff>())) {
 					// A negative Y value moves the player UPWARD.
 					// -15f is a sharp jump. Adjust this value to change the intensity.
 					player.velocity.Y = -15f; 
-					player.AddBuff(ModContent.BuffType<UpliftDebuff>(), 180); // 3 seconds
+					player.AddBuff(ModContent.BuffType<Buffs.UpliftDebuff>(), 180); // 3 seconds
 
 					if (Main.netMode == NetmodeID.MultiplayerClient)
 					{
 							NetMessage.SendData(MessageID.PlayerControls, number: player.whoAmI);
 					}
+				}
             }
             return true;
         }

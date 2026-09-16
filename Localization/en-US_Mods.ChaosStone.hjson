@@ -198,12 +198,17 @@ Buffs: {
 	}
 
 	OrderWhipDebuff: {
-		Description: Mods.ChaosStone.Buffs.OrderWhipDebuff.Description
+		Description: Order Whipped
 		DisplayName: Order Whip Debuff
 	}
 
 	OrderWhipAdvancedDebuff: {
-		Description: Mods.ChaosStone.Buffs.OrderWhipAdvancedDebuff.Description
+		Description: Order Whipped... But Advanced
 		DisplayName: Order Whip Advanced Debuff
+	}
+
+	UpliftDebuff: {
+		Description: Your Uplift abilities are on cooldown
+		DisplayName: Uplift Debuff
 	}
 }
