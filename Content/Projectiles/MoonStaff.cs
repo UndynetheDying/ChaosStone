@@ -45,7 +45,7 @@ namespace ChaosStone.Content.Projectiles.Minions
 		}
 
 		public override void SetDefaults() {
-			Item.damage = 3;
+			Item.damage = 10;
 			Item.knockBack = 3f;
 			Item.mana = 10; // mana cost
 			Item.width = 32;

@@ -12,13 +12,14 @@ namespace ChaosStone.Content.Items.Weapons
 			Item.height = 40;
 			Item.UseSound = SoundID.Item71;
 			Item.SetShopValues(ItemRarityColor.LightRed4, 10000);
-			Item.damage = 70;
-			Item.useTime = 20;
-			Item.useAnimation = 20;
+			Item.damage = 90;
+			Item.useTime = 12;
+			Item.useAnimation = 12;
 			Item.shoot = ProjectileID.SnowBallFriendly;
 			Item.shootSpeed = 20;
-			Item.mana = 15;
+			Item.mana = 1;
 			Item.useStyle = ItemUseStyleID.Shoot;
+			Item.autoReuse = true;
 		}
 
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
