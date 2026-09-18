@@ -21,8 +21,8 @@ namespace ChaosStone.Content.Projectiles
 			Projectile.DefaultToWhip();
 
 			// use these to change from the vanilla defaults
-			// Projectile.WhipSettings.Segments = 20;
-			// Projectile.WhipSettings.RangeMultiplier = 1f;
+			Projectile.WhipSettings.Segments = 30;
+			Projectile.WhipSettings.RangeMultiplier = 3f;
 		}
 
 		private float Timer {

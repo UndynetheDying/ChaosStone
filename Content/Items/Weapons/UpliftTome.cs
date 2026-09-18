@@ -17,7 +17,7 @@ namespace ChaosStone.Content.Items.Weapons
 			Item.useAnimation = 12;
 			Item.shoot = ProjectileID.SnowBallFriendly;
 			Item.shootSpeed = 20;
-			Item.mana = 1;
+			Item.mana = 3;
 			Item.useStyle = ItemUseStyleID.Shoot;
 			Item.autoReuse = true;
 		}
